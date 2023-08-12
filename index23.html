@@ -1,0 +1,73 @@
+<!--
+/* ﷲ  ﷽  ﷲ  ﷽   ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ.. 
+|:          **** بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ ****           :|
+|:     ⚡☝..✍-☝..✍-☝..✍-☝..✍-☝..✍-☝..✍⚡   :|
+|:               ⌚ in the name of allah ⌛              :|
+﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽*/
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>allah</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 100%;
+        height: 100vh;
+        background-image: url("./1579804_963.jpg");
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 400px;
+        height: 300px;
+        position: relative;
+        transform: perspective(800px) rotateY(30deg);
+        transition: 2s;
+        transform-style: preserve-3d;
+      }
+      .box:hover {
+        transform: perspective(800px) rotateY(210deg);
+      }
+      .box > div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+      }
+      .box > div:nth-last-of-type(1) {
+        background-color: white;
+        /* transform: scaleX(-1);  */
+      }
+      .box > div:nth-last-of-type(2) {
+        transform: translateZ(-1px) scaleX(-1);
+        background-color: aqua; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <div>front Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quos a architecto corrupti reprehenderit odit aspernatur quas animi laborum. Illum.</div>
+        <div>backend Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusamus a aperiam eum, repudiandae magnam quae vitae quisquam molestiae. Officia!</div>
+      </div>
+    </div>
+  </body>
+</html>
